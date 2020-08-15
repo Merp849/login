@@ -15,5 +15,8 @@ python log.py
 sleep 2
 clear
 cd /data/data/com.termux/files/home
+echo -e white
+echo 'Hello ANGGA, Welcome back. All orders can be done!'
 echo -e $green
-date
+echo 'Login:' date
+echo -e $yellow
