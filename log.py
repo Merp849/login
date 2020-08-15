@@ -6,26 +6,23 @@ def menu():
       while True:
            print("")
            os.system("clear")
-           print('\033[1;36;40m<───────────────[ DarkCurut08 ] ───────────────>')
            print('')
            os.system('date | lolcat')
            print("\033[1;93m")
-           print(" \033[1;92m   Silahkan Login Eaa Sayang')")
+           print(" \033[1;92m Please login to continue!")
            print("\033[1;93m")
-           print("  <───────────────[ DarkCurut08 ] ───────────────>")
+
            print("")
            try:
                 x = str(input('\033[1;92mUsername \033[1;93m: '))
-                print("")
                 e = getpass('\033[1;92mPassword \033[1;93m: ')
                 print ("")
-                if x=="Username" and e=="Password":
-                   print('Login Sukses Mohon Tunggu Sebentar...')
+                if x=="root" and e=="root":
+                   print('Successfully logged in, please wait ....')
                    time.sleep(1)
                    os.system('clear')
                    print('')
                    os.system('figlet ' + x + ' | lolcat')
-                   print('\033[1;92m ────────────────────────────────────── ')
                    print("")
                    break
                 else:
@@ -33,7 +30,7 @@ def menu():
                       print("")
                       print("")
                       print("")
-                      print("\033[1;91m     Password/Usr Name Salah")
+                      print("\033[1;91m Password / Username is wrong!")
                       time.sleep(2)
                       print("")
            except Exception:
@@ -43,7 +40,7 @@ def menu():
                       print("")
                       print("")
                       print("")
-                      print("\033[1;91m     Password/Usr Name Salah")
+                      print("\033[1;91m Password / Username is wrong!")
                       time.sleep(2)
            except KeyboardInterrupt:
                       print("")
@@ -52,6 +49,6 @@ def menu():
                       print("")
                       print("")
                       print("")
-                      print("\033[1;91m     Password/Usr Name Salah")
+                      print("\033[1;91m Password / Username is wrong!")
                       time.sleep(2)
 menu()
