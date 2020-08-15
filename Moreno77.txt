@@ -7,16 +7,14 @@ red='\e[1;31m'
 white='\e[1;37m'
 yellow='\e[1;33m'
 echo -e $red
-read -p "This terminal is equipped with security, press enter to continue!!" a;
+read -p "This terminal is equipped with a security login, press enter to continue!" a;
 cd login
 sleep 1
+echo -e $green
 echo "Connecting....";
 python log.py
 sleep 2
 clear
 cd /data/data/com.termux/files/home
-echo -e white
-echo 'Hello ANGGA, Welcome back. All orders can be done!'
 echo -e $green
-echo 'Login:' date
-echo -e $yellow
+echo 'Horee....... You have successfully logged in, you can do any of the commands below!'
